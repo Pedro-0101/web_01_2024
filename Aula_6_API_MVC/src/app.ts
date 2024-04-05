@@ -1,5 +1,5 @@
 import express from "express";
-import { cadastrarProduto, pesquisarProdutoPorID, listaProdutos } from "./controller/ProductController";
+import { cadastrarProduto, pesquisarProdutoPorID, listaProdutos } from "./service/controller/ProductController";
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;

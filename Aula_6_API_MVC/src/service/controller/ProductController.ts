@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { ProductService } from "../service/ProductService";
+import { ProductService } from "../ProductService";
 const productService = new ProductService();
 
 export function cadastrarProduto (req: Request, res: Response){
