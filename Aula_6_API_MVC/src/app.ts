@@ -15,5 +15,3 @@ app.get("/api/product",pesquisarProdutoPorID)
 app.get("/api/products", listaProdutos)
 
 app.listen(PORT, logInfo);
-
-
