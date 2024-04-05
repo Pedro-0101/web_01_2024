@@ -14,13 +14,17 @@ export class ProductService{
         return novoProduto;
     }
 
-    consultarProduto(id: any): Product|undefined{
+    consultarProduto(id: any, name: any): Product|undefined{
         const idNumber: number = parseInt(id, 10);
-        console.log(id)
-        return this.productRepository.filtraProdutoPorId(idNumber);
+        const txtName: string = name;
+        if(!name)
+            console.log(id);
+        if(!id)
+            console.log(name);
+        return this.productRepository.filtraProduto(idNumber, txtName);
     }
 
     getProducts():Product[]{
         return this.productRepository.filtraTodosProdutos();
     }
-}
+} 
